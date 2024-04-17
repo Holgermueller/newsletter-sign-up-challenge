@@ -33,21 +33,58 @@
   </head>
   <body>
     <!-- Sign-up form start -->
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+            <img
+              src="assets/images/illustration-sign-up-mobile.svg"
+              alt="Image for mobile display"
+              class="img-fluid d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none"
+            />
+            <img
+              src="assets/images/illustration-sign-up-desktop.svg"
+              alt="Image for desktop display"
+              class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block"
+            />
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-5">
+            <h1 class="my-3">Stay updated!</h1>
 
-    Stay updated! Join 60,000+ product managers receiving monthly updates on:
-    Product discovery and building what matters Measuring to ensure updates are
-    a success And much more! Email address email@company.com
-    <button>Subscribe to monthly newsletter</button>
+            <p class="my-3">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
 
+            <ul>
+              <li>Product discovery and building what matters</li>
+              <li>Measuring to ensure updates are a success</li>
+              <li>And much more!</li>
+            </ul>
+
+            <form action="#">
+              <label for="emailInput" class="form-label">Email address </label>
+              <input
+                type="email"
+                name="emailInput"
+                id="emailInput"
+                placeholder="  email@company.com"
+                class="form-control"
+              />
+              <input type="button" value="Subscribe to monthly newsletter" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
 
-    Thanks for subscribing! A confirmation email has been sent to
+    <!-- Thanks for subscribing! A confirmation email has been sent to
     ash@loremcompany.com. Please open it and click the button inside to confirm
     your subscription.
 
-    <button>Dismiss message</button>
+    <button>Dismiss message</button> -->
 
     <!-- Success message end -->
     <footer>
