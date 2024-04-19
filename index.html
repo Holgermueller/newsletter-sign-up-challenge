@@ -63,6 +63,7 @@
 
             <form action="#" class="container p-0 m-0">
               <label for="emailInput" class="form-label">Email address </label>
+              <div class="feedback" id="feedback">Valid email required</div>
               <input
                 type="email"
                 name="emailInput"
@@ -74,6 +75,9 @@
                 type="button"
                 class="p-3 btn btn-dark col-12"
                 value="Subscribe to monthly newsletter"
+                onclick="validateForm(event)"
+                data-bs-toggle="modal"
+                data-bs-target="#modal"
               />
             </form>
           </div>
@@ -84,13 +88,34 @@
 
     <!-- Success message start -->
 
-    <!-- Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription.
+    <div
+      class="modal"
+      id="modal"
+      tabindex="-1"
+      aria-labelledby="SuccessModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="assets/images/icon-success.svg" alt="Success image" />
 
-    <button>Dismiss message</button> -->
+            <h2>Thanks for subscribing!</h2>
 
-    <!-- Success message end -->
+            <p class="success-message">
+              A confirmation email has been sent to
+              <span>ash@loremcompany.com</span>. Please open it and click the
+              button inside to confirm your subscription.
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="p-3 btn btn-dark col-12">Dismiss message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div class="attribution">
         Challenge by

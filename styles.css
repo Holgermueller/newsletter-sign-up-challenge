@@ -27,6 +27,26 @@ label {
   font-size: 0.75rem;
 }
 
+.feedback {
+  float: right;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: hsl(4, 100%, 67%);
+  display: none;
+}
+
+.success-message span {
+  font-weight: 700;
+}
+
+.modal-body h2 {
+  font-size: 2rem;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
