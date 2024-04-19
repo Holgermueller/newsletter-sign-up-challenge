@@ -17,6 +17,8 @@ const validateForm = (event) => {
       "hsla(4, 100%, 67%, .2)";
     document.getElementById("emailInput").style.color = "hsl(4, 100%, 67%)";
   } else {
-    console.log("success");
+    let myModal = new bootstrap.Modal(document.getElementById("modal"), {});
+    myModal.show();
+    document.getElementById("emailInput").value = "";
   }
 };

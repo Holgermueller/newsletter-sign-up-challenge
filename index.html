@@ -76,31 +76,32 @@
                 class="p-3 btn btn-dark col-12"
                 value="Subscribe to monthly newsletter"
                 onclick="validateForm(event)"
-                data-bs-toggle="modal"
-                data-bs-target="#modal"
               />
             </form>
           </div>
         </div>
       </div>
     </main>
-    <!-- Sign-up form end -->
 
-    <!-- Success message start -->
+    <!-- Modal -->
 
     <div
-      class="modal"
+      class="modal fade"
       id="modal"
       tabindex="-1"
       aria-labelledby="SuccessModal"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-body">
-            <img src="assets/images/icon-success.svg" alt="Success image" />
+            <img
+              class="pt-5"
+              src="assets/images/icon-success.svg"
+              alt="Success image"
+            />
 
-            <h2>Thanks for subscribing!</h2>
+            <h2 class="my-5">Thanks for subscribing!</h2>
 
             <p class="success-message">
               A confirmation email has been sent to
@@ -110,7 +111,9 @@
           </div>
 
           <div class="modal-footer">
-            <button class="p-3 btn btn-dark col-12">Dismiss message</button>
+            <button class="p-3 btn btn-dark col-12" data-bs-dismiss="modal">
+              Dismiss message
+            </button>
           </div>
         </div>
       </div>
