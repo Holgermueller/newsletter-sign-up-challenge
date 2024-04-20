@@ -19,7 +19,7 @@ h1 {
 
 ul {
   list-style-type: none;
-  list-style: circle outside url("assets/images/icon-list.svg");
+  list-style: circle outside url("../assets/images/icon-list.svg");
 }
 
 ul li {
