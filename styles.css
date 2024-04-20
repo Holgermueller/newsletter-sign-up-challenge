@@ -63,7 +63,8 @@ label {
 
 @media screen and (min-width: 800px) {
   body,
-  html {
+  html,
+  .modal {
     display: grid;
     place-items: center;
     align-content: center;
@@ -76,14 +77,19 @@ label {
     border-radius: 36px;
   }
 
-  input[type="email"]:hover {
+  input[type="email"]:hover,
+  .close-button:hover,
+  input[type="button"]:hover {
     cursor: pointer;
   }
 
   .close-button:hover,
   input[type="button"]:hover {
-    cursor: pointer;
     background-color: hsl(4, 100%, 67%);
     border-color: hsl(4, 100%, 67%);
+  }
+
+  .modal {
+    background-color: hsl(235, 18%, 26%);
   }
 }
