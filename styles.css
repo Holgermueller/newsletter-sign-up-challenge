@@ -5,6 +5,11 @@ html {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   color: hsl(234, 29%, 20%);
+  background-color: hsl(234, 29%, 20%);
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
 }
 
 h1 {
@@ -50,7 +55,35 @@ label {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(0, 0%, 100%);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  body,
+  html {
+    display: grid;
+    place-items: center;
+    align-content: center;
+  }
+
+  main {
+    width: max-content;
+    height: max-content;
+    padding: 2% 0;
+    border-radius: 36px;
+  }
+
+  input[type="email"]:hover {
+    cursor: pointer;
+  }
+
+  .close-button:hover,
+  input[type="button"]:hover {
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+    border-color: hsl(4, 100%, 67%);
+  }
 }

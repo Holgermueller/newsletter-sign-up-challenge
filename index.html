@@ -34,21 +34,26 @@
   <body>
     <!-- Sign-up form start -->
     <main>
-      <div class="container p-0 m-0">
+      <div class="container-sm p-0 m-0">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+          <div
+            class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 order-lg-2"
+          >
             <img
               src="assets/images/illustration-sign-up-mobile.svg"
               alt="Image for mobile display"
-              class="img-fluid d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none"
+              class="img-fluid w-100 d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none"
             />
             <img
               src="assets/images/illustration-sign-up-desktop.svg"
               alt="Image for desktop display"
-              class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block"
+              class="p-0 img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block mx-auto"
             />
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-5">
+
+          <div
+            class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 p-5 order-lg-1"
+          >
             <h1 class="my-3">Stay updated!</h1>
 
             <p class="my-3">
@@ -81,43 +86,46 @@
           </div>
         </div>
       </div>
-    </main>
 
-    <!-- Modal -->
+      <!-- Modal -->
 
-    <div
-      class="modal fade"
-      id="modal"
-      tabindex="-1"
-      aria-labelledby="SuccessModal"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-body">
-            <img
-              class="pt-5"
-              src="assets/images/icon-success.svg"
-              alt="Success image"
-            />
+      <div
+        class="modal fade w-100"
+        id="modal"
+        tabindex="-1"
+        aria-labelledby="SuccessModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img
+                class="pt-5"
+                src="assets/images/icon-success.svg"
+                alt="Success image"
+              />
 
-            <h2 class="my-5">Thanks for subscribing!</h2>
+              <h2 class="my-5">Thanks for subscribing!</h2>
 
-            <p class="success-message">
-              A confirmation email has been sent to
-              <span>ash@loremcompany.com</span>. Please open it and click the
-              button inside to confirm your subscription.
-            </p>
-          </div>
+              <p class="success-message">
+                A confirmation email has been sent to
+                <span>ash@loremcompany.com</span>. Please open it and click the
+                button inside to confirm your subscription.
+              </p>
+            </div>
 
-          <div class="modal-footer">
-            <button class="p-3 btn btn-dark col-12" data-bs-dismiss="modal">
-              Dismiss message
-            </button>
+            <div class="modal-footer">
+              <button
+                class="p-3 btn btn-dark col-12 close-button"
+                data-bs-dismiss="modal"
+              >
+                Dismiss message
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <footer>
       <div class="attribution">
